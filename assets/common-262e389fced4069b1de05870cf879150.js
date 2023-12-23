@@ -1,0 +1,2 @@
+//# sourceMappingURL=common.js.map
+function fnLoadAjaxPage(d,e,b,f,c){var g=$("#baseUrl").val();$.ajax({type:"POST",url:g+"/"+d+"/"+e,data:"id="+f,success:function(a){$("#"+b).html(a);for(a=0;a<c.length;a++)$("#"+c[a]).empty()},error:function(a){$("#"+b).html("Error!")}})};
